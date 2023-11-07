@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D-BookSky</title>
+    <link rel="icon" href="booksky.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav">
+<h1>D' BookSky</h1>
+
+    </div>
+    <div class="container">
+<div class="bookcontainer">
+<h2>Rich Dad Poor Dad</h2>
+<h5>Robert</h5>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos accusantium iure ratione corrupti, itaque hic excepturi. Dolores aspernatur commodi nulla voluptatibus dolor officia, blanditiis quia quod, veniam aperiam voluptate eius.</p>
+  <button id="bt" onclick="del(event)">Delete</button>
+</div>
+</div>
+<div class="ovrlay"></div>
+<div class="popbox">
+    <h2>Add Book</h2>
+    <form>
+        <input type="text" placeholder="Book Id" id="booktitle" required maxlength="45">
+        <input type="text" placeholder="Book Author" id="bookauthor" required maxlength="45">
+        <textarea placeholder="Short Description..." id="bookdescr" required maxlength="200"></textarea>
+        <button id="addbook" >Add</button>
+        <button id="cancels">Cancel</button>
+    </form>
+</div>
+<button class="addbtn" id="addpop">+</button>
+</body>
+</html>
+<script src="func.js"></script>
